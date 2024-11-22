@@ -1,6 +1,6 @@
 export const config = {
   // Default interval in minutes
-  checkInterval: 5,
+  checkInterval: 1,
 
   // Telegram settings (optional)
   telegram: {
