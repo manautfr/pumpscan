@@ -17,6 +17,7 @@ export async function watchTransactions(addresses) {
   console.log(`🔍 Checking recent transactions for ${addresses.length} addresses...`.cyan);
   
   while (true) {
+    console.log("x_x")
     try {
       if (isInitializing) {
         initializeProgressBar(addresses.length);
