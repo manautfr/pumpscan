@@ -1,34 +1,41 @@
-# 🐋 Solana Whale Transaction Tracker
+# 🐋 PumpScan - Catch pump.fun whales with ease
 
-Track Solana whale wallet transactions in real-time with optional Telegram alerts.
+Track Solana whale wallet transactions in real-time with optional Telegram alerts. Especially useful for catching Pump.fun snipes. It utilizes solscan API, API key is not required.
 
-## Features
+Note: This is not a trading bot or sniper, this bot does not buy/sell tokens. If you benefit from this tool please supports me and consider donating, find more information below of the page.
 
-- 🔍 Monitor multiple whale addresses for token transactions
-- 💱 Track token swaps with USD value
-- ⏰ Configurable check intervals
-- 📱 Optional Telegram notifications
-- 🎨 Beautiful colored console output
+![Screenshot](https://s3.amazonaws.com/i.snag.gy/yPb1OI.jpg)
 
 ## Setup
 
-1. Install dependencies:
+**Prerequisites:**
+[Nodejs](https://nodejs.org/) installed
+
+
+1. Clone the repo and navigate to it:
+   ```bash
+   git clone https://github.com/manautfr/pumpscan
+   cd pumpscan
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Create a `whales.txt` file with one wallet address per line:
+3. Create a `whales.txt` file with one wallet address per line you want to track:
    ```
-   9xtNwPBdjM8WWmotpkUscwMwWqspggduKvAsHRiYpdkN
-   <other addresses>
+   9xtNw....
+   EH2aU....
+   ...
    ```
 
-3. Configure settings in `src/config.js`:
-   - Set check interval (minutes)
-   - Configure Telegram bot (optional)
-   - Set minimum transaction value
+4. Configure settings in `src/config.js`:
+   - Set check interval (minutes, default every 5 minutes)
+   - Configure Telegram bot (optional, if you want to get notifications for new alerts)
+   - Set minimum transaction value to be notified (default 1000 usd)
 
-4. Start tracking:
+5. Run the tool:
    ```bash
    npm start
    ```
@@ -66,6 +73,9 @@ The tool displays transactions in a clear, formatted way:
 - USD value
 - Transaction ID
 
-## License
+## Contribute?
+Feel free to open a pull request if you would like to help develop this tool further.
 
-MIT
+## Donations
+Solana:
+`JBQKGGUg1M8Nnsfh5NVs7tDrmdfoUVbiLwCwUFkZoGdA`
