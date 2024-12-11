@@ -2,17 +2,24 @@
 
 Track Solana whale wallet transactions in real-time with optional Telegram alerts. Especially useful for catching Pump.fun snipes. It utilizes solscan API, API key is not required.
 
-Note: This is not a trading bot or sniper, this bot does not buy/sell tokens. If you benefit from this tool please supports me and consider donating, find more information below of the page.
-
 ![Screenshot](https://s3.amazonaws.com/i.snag.gy/yPb1OI.jpg)
 
-## Setup
+## Installation
 
+## 1) Quick start for Windows users:
+1. Download and install [Nodejs](https://nodejs.org/) if you don't have.
+
+2. Download the repository (Click green **Code** button on this page and **Download ZIP** )
+
+3. Extract the archive, double click `start.bat`
+
+
+## 2) Advanced users
 **Prerequisites:**
-[Nodejs](https://nodejs.org/) installed
+1. Download and install [Nodejs](https://nodejs.org/) if you don't have.
 
 
-1. Clone the repo and navigate to it:
+2. Clone the repo and navigate to it:
    ```bash
    git clone https://github.com/manautfr/pumpscan
    cd pumpscan
@@ -23,14 +30,14 @@ Note: This is not a trading bot or sniper, this bot does not buy/sell tokens. If
    npm install
    ```
 
-3. Create a `whales.txt` file with one wallet address per line you want to track:
+3. (optional) Modify `whales.txt` file with one wallet address per line you want to track:
    ```
    9xtNw....
    EH2aU....
    ...
    ```
 
-4. Configure settings in `src/config.js`:
+4. (optional) Configure settings in `src/config.js`:
    - Set check interval (minutes, default every 5 minutes)
    - Configure Telegram bot (optional, if you want to get notifications for new alerts)
    - Set minimum transaction value to be notified (default 1000 usd)
